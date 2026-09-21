@@ -48,7 +48,8 @@ def traduzir():
     if request.method == "POST":
         texto = request.form.get("texto", "")
         texto_traduzido = tradutor.translate(texto)
-    return render_template("extracao.html")
+        return render_template("extracao.html", texto=texto_traduzido)
+    return render_template("extracao.html", texto="")
 
 if __name__ == "__main__":
     app.run(debug=True)
