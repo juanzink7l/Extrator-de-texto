@@ -52,4 +52,4 @@ def traduzir():
     return render_template("extracao.html", texto="")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)     
